@@ -1,0 +1,207 @@
+@import url(https://fonts.googleapis.com/css?family=Raleway);
+body {
+	margin: 0;
+	padding: 0;
+	font-family: Arial, sans-serif;
+}
+
+nav {
+	background: #dd730f;
+	padding: 5px 1px;
+	display: flex;
+	align-items: center;
+}
+
+nav a {
+	color: #fff;
+
+}
+
+nav a:hover {
+	color: #ef4b3f;
+}
+
+.logo {
+	flex: 1;
+}
+
+.logo img {
+	width: 60%;
+	margin-right: 10px;
+}
+
+.menu {
+	display: flex;
+	align-items: center;
+	list-style: none;
+
+}
+
+.menu li {
+	padding: 15px 10px;
+
+}
+
+.menu a {
+	text-decoration: none;
+	color: white;
+	font-weight: bold;
+}
+
+.toggle {
+	font-size: 30px;
+	display: none;
+}
+
+@media screen and (max-width: 600px) {
+	nav {
+		display: block;
+		position: relative;
+		padding: 15px 20px;
+
+	}
+
+	.menu {
+		margin-top: 15px;
+		display: none;
+
+	}
+
+	.menu.active,
+	.toggle {
+		display: block;
+	}
+
+	.toggle {
+		position: absolute;
+		top: 24px;
+		right: 20px;
+	}
+}
+
+.in_1 {
+  list-style: none;
+
+  margin-left: auto;
+  align-items: center;
+  background-color: white;
+  padding-top: 1px;
+  padding-bottom: 1px;
+}
+
+.in_1 li {
+  margin: 0 10px;
+  /* Reduce the margin for smaller screens */
+}
+
+.in_1 marquee {
+  text-decoration: none;
+  color: #f39c12;
+  font-weight: bold;
+  font-size: 12px;
+}
+/* make responsive */
+
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+.mySlides img {
+  border-radius: 12px;
+}
+
+
+/* Next & previous buttons */
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {
+    opacity: .4
+  }
+
+  to {
+    opacity: 1
+  }
+}
+
+.darshan {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+.darshan-title{
+  color: darkorange;
+}
+.images-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.dwarka img,
+.dakor img {
+  max-width: 100%;
+  height: auto;
+  margin: 0 5px;
+  border-radius: 12px;
+}
